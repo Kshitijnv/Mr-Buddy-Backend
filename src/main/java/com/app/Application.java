@@ -29,7 +29,7 @@ public class Application {
     	return new WebMvcConfigurer() {
     		@Override
     		public void addCorsMappings(CorsRegistry registry) {
-    			registry.addMapping("/**")
+    			registry.addMapping("https://mrbuddy.netlify.app")
     			.allowedOrigins(fronendUrl)
     			.allowedHeaders("*")
     			.allowedMethods("GET","POST","PUT","DELETE")
