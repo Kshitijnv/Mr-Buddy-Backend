@@ -34,7 +34,7 @@ public class AppointmentController {
 		}
 	}
 
-	@GetMapping("/{id}/complete")
+	@PutMapping("/{id}")
 	public ResponseEntity<Void> setAppointmentComplete(@PathVariable Long id) {
 		try {
 			appointmentService.setCompleteAppointment(id);
